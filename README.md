@@ -23,4 +23,4 @@ To be written in a future blog post. The gist of it is:
 1. Install com0com signed version
 2. Create virtual COM port pair in Setup program
 3. Download com2tcp and put it somewhere
-4. com2tcp --telnet \\.\CNCB0 wlan.yourpi.example.com 10110
+4. com2tcp --telnet \\\\.\CNCB0 wlan.yourpi.example.com 10110
