@@ -1,0 +1,10 @@
+# /etc/default/gpsd
+
+START_DAEMON="true"
+USBAUTO="false"
+
+# RPi 3 serial
+DEVICES="/dev/serial0"
+
+# -n means immediately start polling GPS
+GPSD_OPTIONS="-n"

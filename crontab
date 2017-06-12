@@ -1,0 +1,4 @@
+# m h  dom mon dow   command
+* * * * * cd ~/ddns && bash ~/ddns/cloudflare-wlan.sh
+* * * * * cd ~/ddns && bash ~/ddns/cloudflare-eth.sh
+* * * * * bash ~/direwolf-sdr.sh
