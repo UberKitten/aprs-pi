@@ -11,7 +11,7 @@ Just edit /etc/default/gpsd and add your device, see the gpsd file in this repo.
 
 ## Setup
 0. [Follow standard Pi setup](https://gist.github.com/T3hUb3rK1tten/806bb851f3de625a835350da3706b2fc)
-1. apt-get install gpsd socat build-essential libasound2-dev gpsd-clients python-gps libgps-dev moreutils
+1. sudo apt-get install gpsd socat build-essential libasound2-dev gpsd-clients python-gps libgps-dev moreutils
 2. git clone https://github.com/wb2osz/direwolf.git && cd direwolf && make && sudo make install
 3. Copy contents of this repo to home directory, set up crontab, **copy config files where they should go**
 4. [Edit your GPSD socket.conf to listen on all interfaces](https://gist.github.com/T3hUb3rK1tten/62834c8ed6b1cf0f3a470410e3651118)
@@ -23,4 +23,4 @@ To be written in a future blog post. The gist of it is:
 1. Install com0com signed version
 2. Create virtual COM port pair in Setup program
 3. Download com2tcp and put it somewhere
-4. com2tcp --telnet \\.\CNCB0 wlan.yourpi.example.com 10110
+4. com2tcp --telnet \\\\.\CNCB0 wlan.yourpi.example.com 10110
