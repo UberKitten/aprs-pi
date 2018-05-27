@@ -1,0 +1,15 @@
+# /etc/systemd/system/socatgps.service
+
+[Unit]
+Description=socat gpspipe
+After=network.target
+After=gpsd.service
+
+[Service]
+Type=simple
+User=root
+ExecStart=/usr/bin/socat "EXEC:/usr/bin/gpspipe -r" TCP-LISTEN:10110,reuseaddr,fork
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
